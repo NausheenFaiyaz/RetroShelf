@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Quicksand:wght@500;600;700&display=swap');
+
+.shop-page {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 26px 16px 38px;
+}
+
+.top-shell {
+  border: 2px solid #2d2431;
+  background: #bfdbf7;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #4a3948;
+  font-weight:900
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border: 2px solid #2d2431;
+  background: #eec8e0;
+  padding: 8px;
+}
+
+.top-row h1 {
+  margin: 0;
+  font-family: 'Jersey 10', sans-serif;
+  font-size: clamp(32px, 5vw, 54px);
+  letter-spacing: 3px;
+  color: #35273a;
+  line-height: 0.9;
+  white-space: nowrap;
+}
+.input-wrapper{
+  display: flex;
+  gap: 10px;
+}
+
+.top-row input,
+.top-row select {
+  height: 38px;
+  border: 2px solid #2d2431;
+  border-radius: 999px;
+  background: #f7e8f2;
+  color: #3a2e41;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 0 12px;
+}
+
+.top-row input {
+  width: 210px;
+}
+
+.top-row select {
+  width: 150px;
+}
+
+.top-row input:focus,
+.top-row select:focus {
+  outline: 2px solid #7bbfd8;
+  outline-offset: 1px;
+}
+
+.status {
+  margin: 12px 0 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #4d3b53;
+}
+
+.status.error {
+  color: #9b2340;
+}
+
+.product-grid {
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.product-card {
+  border: 2px solid #2d2431;
+  background: #bfdbf7;
+  border-radius: 2px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: 10px;
+}
+
+.image-wrap {
+  border: 2px solid #2d2431;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ddd;
+  min-height: 220px;
+}
+
+.image-wrap img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  line-height: 0.85;
+  color: #33243a;
+  text-transform: uppercase;
+}
+
+.brand {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #44374a;
+}
+
+.info-box {
+  margin: 0;
+  border: 2px solid #2d2431;
+  border-radius: 12px;
+  background: #eec8e0;
+  padding: 9px 9px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #281d2f;
+  overflow: hidden;
+}
+
+.meta-row {
+  margin-top: auto;
+  border: 2px solid #2d2431;
+  border-radius: 12px;
+  background: #f7e8f2;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.meta-row p {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #33273a;
+  font-size: 13px;
+}
+
+.meta-row strong {
+  font-size: 14px;
+}
+
+.discount-tag {
+  font-weight: 700;
+  color: #8f1f4f;
+}
+
+@media (max-width: 930px) {
+  .top-row {
+    flex-wrap: wrap;
+  }
+
+  .top-row h1 {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+
+  .image-wrap {
+    min-height: 240px;
+  }
+}
+
+.pager {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pager p {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #3f3046;
+  font-size: 14px;
+}
+
+.pager button {
+  height: 36px;
+  min-width: 86px;
+  border: 2px solid #2d2431;
+  border-radius: 999px;
+  background: #f2d3e5;
+  color: #2f2334;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pager button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

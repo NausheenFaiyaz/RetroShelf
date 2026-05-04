@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #122038;
+  background-color: #e8f4f7;
+  /* background:
+    radial-gradient(circle at 10% 5%, rgba(119, 227, 205, 0.25) 0%, transparent 35%),
+    radial-gradient(circle at 90% 95%, rgba(170, 197, 255, 0.35) 0%, transparent 40%),
+    #f5f8ff; */
+}
+
+#root {
+  min-height: 100vh;
+}
